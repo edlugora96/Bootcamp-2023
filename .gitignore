@@ -23,6 +23,7 @@
 # IDE configuration files
 .idea/
 .vscode/
+.DS_Store
 
 # Visual Studio specific folders and files
 *.suo
