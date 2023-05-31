@@ -5,15 +5,16 @@
 }
 
 header {
-    height: 40vh;
+    height: 32vh;
     width: 100vw;
-    background-color: #495057;
+    background-image: url('images/Stars.png');
 }
 
 main {
     display: flex;
     justify-content: space-around;
-    max-height: 80vh;
+    max-height: 100vh;
+    margin-top: 20px;
   }
 
 footer {
