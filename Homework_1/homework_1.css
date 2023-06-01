@@ -22,6 +22,7 @@ h5 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* ---------------------------------------------------------------- */
 @media (max-width: 768px) {
   body {
     background-image: url(./img/logoDC.jpg);
@@ -58,9 +59,85 @@ h5 {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  /* Estilos para pantallas de 769px a 1024px de ancho */
+  body {
+    background-image: url(./img/logoDC.jpg);
+    background-size: 30%;
+  }
+
+  .perfil {
+    position: absolute;
+    top: calc(50% - 15px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+  }
+
+  .seccion1 {
+    width: 80vw;
+    height: 60vh;
+    background-color: red;
+    background-image: url(./img/superman.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 200%;
+    border-radius: 5px;
+  }
+
+  .seccion2 {
+    width: 80vw;
+    height: 30vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 5%;
+    border-radius: 5px;
+  }
+
+  .texto {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1025px) {
-  /* Estilos para pantallas de 1025px en adelante */
-}
+
+    body {
+        background-image: url(./img/logoDC.jpg);
+        background-size: 10%;
+      }
+
+      .perfil {
+        position: absolute;
+        top: calc(50% - 15px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+        display: flex;
+      }
+    
+      .seccion1 {
+        width: 40vw;
+        height: 70vh;
+        background-color: red;
+        background-image: url(./img/superman.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 200%;
+        border-radius: 5px;
+      }
+    
+      .titulo{
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+
+      .seccion2 {
+        width: 40vw;
+        height: 70vh;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 5%;
+        border-radius: 5px;
+      }
+    
+      .texto {
+        font-size: 20px;
+      }
+    }
+
