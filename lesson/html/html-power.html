@@ -29,33 +29,39 @@
     <title>The Power of HTML</title>
   </head>
   <body>
-    <header style="background-color: #333; color: #fff; padding: 10px">
+    <header
+      role="banner"
+      style="background-color: #333; color: #fff; padding: 10px"
+    >
       <h1 style="font-size: 28px; margin: 0; padding: 20px">
         The Power of HTML
       </h1>
     </header>
+    <main role="main">
+      <p style="font-size: 16px; line-height: 1.6; padding: 20px">
+        HTML (Hypertext Markup Language) is the backbone of the web. It provides
+        the structure and semantic meaning for web pages, allowing browsers to
+        render content in a structured manner. HTML has evolved over the years
+        and has become more powerful with the introduction of HTML5.
+      </p>
 
-    <p style="font-size: 16px; line-height: 1.6; padding: 20px">
-      HTML (Hypertext Markup Language) is the backbone of the web. It provides
-      the structure and semantic meaning for web pages, allowing browsers to
-      render content in a structured manner. HTML has evolved over the years and
-      has become more powerful with the introduction of HTML5.
-    </p>
+      <p style="font-size: 16px; line-height: 1.6; padding: 20px">
+        HTML5 brings a range of new features and capabilities that enhance the
+        web development experience. Some of the notable features include:
+      </p>
 
-    <p style="font-size: 16px; line-height: 1.6; padding: 20px">
-      HTML5 brings a range of new features and capabilities that enhance the web
-      development experience. Some of the notable features include:
-    </p>
+      <ul style="font-size: 16px; line-height: 1.6; padding: 20px">
+        <li>Support for multimedia elements such as audio and video</li>
+        <li>
+          Canvas and WebGL for creating interactive graphics and animations
+        </li>
+        <li>Form enhancements with new input types and validation</li>
+        <li>Improved accessibility through semantic elements</li>
+        <li>Offline support with local storage and application cache</li>
+      </ul>
+    </main>
 
-    <ul style="font-size: 16px; line-height: 1.6; padding: 20px">
-      <li>Support for multimedia elements such as audio and video</li>
-      <li>Canvas and WebGL for creating interactive graphics and animations</li>
-      <li>Form enhancements with new input types and validation</li>
-      <li>Improved accessibility through semantic elements</li>
-      <li>Offline support with local storage and application cache</li>
-    </ul>
-
-    <nav style="background-color: #f2f2f2; padding: 10px">
+    <nav role="navigation" style="background-color: #f2f2f2; padding: 10px">
       <ul
         style="list-style-type: none; padding: 0; margin: 0; text-align: center"
       >
@@ -75,6 +81,7 @@
     </nav>
 
     <footer
+      role="contentinfo"
       style="
         background-color: #333;
         color: #fff;
