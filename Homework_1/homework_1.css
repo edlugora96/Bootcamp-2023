@@ -1,8 +1,30 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.titulo{
-    color: red;
+body {
+  background-image: url(./img/logoDC.jpg);
+}
+
+footer {
+  height: 30px;
+  width: 100vw;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h5 {
+  color: #ffff;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo {
+  color: red;
 }
