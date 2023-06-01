@@ -102,3 +102,26 @@ footer {
   background: darkorange;
   transform: scale(1.2);
 }
+
+@media screen and (max-width: 1000px) {
+  main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .desc-Section {
+    width: 100vw;
+  }
+
+  .desc-Section p {
+    font-size: 3vh;
+  }
+
+  .img-Section {
+    height: 100vh;
+  }
+
+  #linkButton{
+    width: 35vw;
+  }
+}
+
