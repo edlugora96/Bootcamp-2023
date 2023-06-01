@@ -84,9 +84,9 @@ footer {
   align-items: center;
 }
 
-footer input {
-  width: 10%;
-  height: 5%;
+#linkButton {
+  height: 8vh;
+  width: 8vw;
   padding: 15px 0;
   font-size: 18px;
   font-weight: bold;
@@ -98,7 +98,7 @@ footer input {
   cursor: pointer;
 }
 
-footer input:hover{
+#linkButton:hover {
   background: darkorange;
   transform: scale(1.2);
 }
