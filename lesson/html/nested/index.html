@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Between Pages Using HTML</title>
+  </head>
+  <body>
+    <header style="background-color: #333; color: #fff; padding: 10px">
+      <h1 style="text-align: center">Navigation Between Pages Using HTML</h1>
+    </header>
+
+    <nav style="background-color: #f2f2f2; padding: 10px">
+      <ul style="list-style-type: none; padding: 0; text-align: center">
+        <li style="display: inline-block; margin-right: 10px">
+          <a href="../index.html">History of HTML</a>
+        </li>
+        <li style="display: inline-block; margin-right: 10px">
+          <a href="../benefits-semantic.html">HTML semantic benefits</a>
+        </li>
+        <li style="display: inline-block">
+          <a href="../html5.html">HTML5</a>
+        </li>
+        <li style="display: inline-block">
+          <a href="../html-power.html">The power of HTML</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main style="padding: 20px">
+      <h2>Introduction</h2>
+      <p>
+        Navigation is a crucial aspect of any website. In HTML5, several
+        elements can be used to create a navigation menu between pages.
+      </p>
+
+      <h2>Using the &lt;a&gt; Tag</h2>
+      <p>
+        The simplest way to create navigation between pages is by using the
+        anchor tag, &lt;a&gt;. By setting the href attribute to the URL of the
+        target page, you can create clickable links that direct users to
+        different pages.
+      </p>
+      <pre>
+      &lt;a href="page2.html"&gt;Go to Page 2&lt;/a&gt;
+    </pre
+      >
+
+      <h2>Using the &lt;nav&gt; and &lt;ul&gt; Elements</h2>
+      <p>
+        HTML5 introduced the &lt;nav&gt; and &lt;ul&gt; elements, which provide
+        a semantic way to structure navigation menus. The &lt;nav&gt; element
+        represents a section of the page that contains navigation links, and the
+        &lt;ul&gt; element is used to create an unordered list of navigation
+        items.
+      </p>
+      <pre>
+      &lt;nav&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="page2.html"&gt;Page 2&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="page3.html"&gt;Page 3&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    </pre
+      >
+
+      <h2>Styling Navigation Elements</h2>
+      <p>
+        To style the navigation elements, you can apply inline styles directly
+        to the HTML elements using the style attribute. For example, you can set
+        background colors, padding, margins, and text styles to customize the
+        appearance of the navigation bar.
+      </p>
+
+      <h2>Conclusion</h2>
+      <p>
+        HTML provides various methods to create navigation between pages.
+        Whether you use simple anchor tags or take advantage of semantic HTML5
+        elements like &lt;nav&gt; and &lt;ul&gt;, you can easily enhance the
+        navigation experience for your website visitors.
+      </p>
+    </main>
+
+    <footer
+      style="
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      "
+    >
+      &copy; 2023 YourWebsite.com. All rights reserved.
+    </footer>
+  </body>
+</html>
