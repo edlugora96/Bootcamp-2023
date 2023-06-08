@@ -5,14 +5,13 @@
 }
 
 header {
-  height: 32vh;
-  width: 100vw;
+  height: 200px;
   background-image: url("images/Stars.png");
 }
 
 .divider {
   background: linear-gradient(#000000, #290739);
-  height: 10vh;
+  height: 60px;
 }
 
 main {
@@ -28,8 +27,7 @@ main {
   background: #84827584;
   border-radius: 8%;
   border: 3px solid rgb(89, 89, 87);
-  width: 150vw;
-  height: 70vh;
+  width: 1600px;
   display: flex;
   flex-direction: column;
 }
@@ -58,8 +56,8 @@ main {
   background: #efdc2f84;
   border-radius: 8%;
   border: 3px solid rgb(223, 232, 63);
-  width: 65vw;
-  height: 70vh;
+  width: 800px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,8 +83,8 @@ footer {
 }
 
 #linkButton {
-  height: 8vh;
-  width: 8vw;
+  height: 50px;
+  width: 150px;
   padding: 15px 0;
   font-size: 18px;
   font-weight: bold;
@@ -109,19 +107,59 @@ footer {
     align-items: center;
   }
   .desc-Section {
-    width: 100vw;
-  }
-
-  .desc-Section p {
-    font-size: 3vh;
+    width: 600px;
   }
 
   .img-Section {
-    height: 100vh;
+    width: 400px;
   }
 
-  #linkButton{
-    width: 35vw;
+  #linkButton {
+    width: 100px;
   }
 }
 
+@media screen and (max-width: 600px) {
+  .desc-Section {
+    width: 300px;
+  }
+
+  .img-Section {
+    width: 300px;
+  }
+
+  .desc-Section h2 {
+    font-size: 25px;
+  }
+
+  .desc-Section p {
+    font-size: 20px;
+    margin: 3%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  header img {
+    display: none;
+  }
+
+  .img-Section {
+    display: none;
+  }
+
+  .desc-Section {
+    width: auto;
+    border: none;
+    background: none;
+  }
+  .desc-Section h2 {
+    background-color: #84827584;
+  }
+  .desc-Section p {
+    background-color: #84827584;
+  }
+
+  #linkButton {
+    width: auto;
+  }
+}
