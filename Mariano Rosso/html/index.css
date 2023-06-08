@@ -139,9 +139,6 @@ footer {
 }
 
 @media screen and (max-width: 300px) {
-  header img {
-    display: none;
-  }
 
   .img-Section {
     display: none;
@@ -163,3 +160,10 @@ footer {
     width: auto;
   }
 }
+
+@media screen and (max-width: 200px) {
+  header img {
+    display: none;
+  }
+}
+
