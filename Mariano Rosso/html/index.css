@@ -10,7 +10,8 @@ header {
 }
 
 .divider {
-  background: linear-gradient(#000000, #290739);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(41, 7, 57, 0.99)),
+    url("images/Stars.png");
   height: 60px;
 }
 
@@ -139,7 +140,6 @@ footer {
 }
 
 @media screen and (max-width: 300px) {
-
   .img-Section {
     display: none;
   }
@@ -166,4 +166,3 @@ footer {
     display: none;
   }
 }
-
