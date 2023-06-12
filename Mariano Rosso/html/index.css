@@ -1,12 +1,42 @@
-.box {
-  width: 940px;
-  position: relative;
-  margin: 0 auto;
+@font-face {
+  font-family: "DistantGalaxy";
+  src: url("fonts/DISTGRG_-webfont.woff") format("woff"),
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("fonts/DISTGRG_-webfont.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: "Aurebesh";
+  src: url("fonts/Aurebesh.ttf") format("truetype");
 }
 
 header {
   height: 200px;
   background-image: url("images/Stars.png");
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: 200px;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: DistantGalaxy;
+  font-size: 30px;
+  color: white;
+}
+
+nav a:hover {
+  color: #ffe81f;
 }
 
 .divider {
@@ -21,6 +51,8 @@ main {
   background-image: url("images/tatooine.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  height: 600px;
+  gap: 100px;
 }
 
 .desc-Section {
@@ -34,6 +66,7 @@ main {
 }
 
 .desc-Section h2 {
+  animation: fontTransitionH2 5s ease-in-out;
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   font-size: 36px;
@@ -41,9 +74,40 @@ main {
 }
 
 .desc-Section p {
-  font-family: "IBM Plex Mono", monospace;
+  animation: fontTransitionP 7s ease-in-out;
+  font-family: "IBM Plex Mono";
   font-size: 24px;
   margin-left: 3%;
+}
+
+@keyframes fontTransitionH2 {
+  from {
+    font: 36px "Aurebesh";
+    line-height: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    font: 36px bold "IBM Plex Mono";
+    line-height: 1;
+    opacity: 100%;
+  }
+}
+
+@keyframes fontTransitionP {
+  from {
+    font: 26px "Aurebesh";
+    line-height: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    font: 24px "IBM Plex Mono";
+    line-height: 1;
+    opacity: 100%;
+  }
 }
 
 #dataText {
@@ -54,11 +118,6 @@ main {
 
 .img-Section {
   margin: 3%;
-  background: #efdc2f84;
-  border-radius: 8%;
-  border: 3px solid rgb(223, 232, 63);
-  width: 800px;
-  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,8 +130,10 @@ main {
   background-color: #fbff0069;
 }
 
-img {
+.img-Section img {
   border-radius: 5%;
+  height: 800px;
+  width: 400px;
 }
 
 footer {
