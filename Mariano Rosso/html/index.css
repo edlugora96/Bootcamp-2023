@@ -142,6 +142,7 @@ footer {
   color: #b5b6b8;
   background: #210208;
   align-items: center;
+  flex-direction: column;
 }
 
 #linkButton {
@@ -161,6 +162,174 @@ footer {
 #linkButton:hover {
   background: darkorange;
   transform: scale(1.2);
+}
+
+footer section {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.cover {
+  background-color: rgba(36, 30, 78, 0.8);
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  bottom: 842px;
+}
+
+.x-wing {
+  height: 200px;
+}
+
+.shootingStars {
+  display: flex;
+  background: url(images/ShootingStars.png);
+  background-size: 350px 200px;
+  background-repeat: repeat;
+  height: 350px;
+  width: 350px;
+  bottom: 493px;
+  border-radius: 50%;
+  animation: shootingStars 5s linear backwards infinite;
+  -webkit-animation: shootingStars 1600ms linear backwards infinite;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes shootingStars {
+  0% {
+    background-position: 200px 200px;
+  }
+  20% {
+    background-position: 160px 160px;
+  }
+  40% {
+    background-position: 120px 120px;
+  }
+  60% {
+    background-position: 80px 80px;
+  }
+  80% {
+    background-position: 40px 40px;
+  }
+  100% {
+    background-position: 0px 0px;
+  }
+}
+@-webkit-keyframes shootingStars {
+  0% {
+    background-position: 200px 200px;
+  }
+  20% {
+    background-position: 160px 160px;
+  }
+  40% {
+    background-position: 120px 120px;
+  }
+  60% {
+    background-position: 80px 80px;
+  }
+  80% {
+    background-position: 40px 40px;
+  }
+  100% {
+    background-position: 0px 0px;
+  }
+}
+.propulsion1__fire {
+  position: relative;
+  top: -12%;
+  left: 13%;
+  rotate: 304deg;
+  display: block;
+  width: 16px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  background: #ff9800;
+  transform: translate(-50%, -50%);
+  animation: dance-fire2 3s infinite linear;
+}
+
+@keyframes dance-fire2 {
+  90%,
+  0%,
+  7%,
+  15%,
+  23%,
+  31%,
+  39%,
+  47%,
+  55% {
+    width: 19px;
+    height: 30px;
+    background: #ffc107;
+  }
+  94%,
+  3%,
+  11%,
+  19%,
+  27%,
+  35%,
+  43%,
+  51%,
+  58%,
+  100% {
+    width: 21px;
+    height: 40px;
+    background: #ff9800;
+  }
+}
+
+.propulsion2__fire {
+  position: relative;
+  top: -17%;
+  left: 28%;
+  rotate: 304deg;
+  display: block;
+  width: 16px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  background: #ff9800;
+  transform: translate(-50%, -50%);
+  animation: dance-fire 3s infinite linear;
+}
+
+@keyframes dance-fire {
+  90%,
+  0%,
+  7%,
+  15%,
+  23%,
+  31%,
+  39%,
+  47%,
+  55% {
+    width: 21px;
+    height: 40px;
+    background: #ffc107;
+  }
+  94%,
+  3%,
+  11%,
+  19%,
+  27%,
+  35%,
+  43%,
+  51%,
+  58%,
+  100% {
+    width: 19px;
+    height: 30px;
+    background: #ff9800;
+  }
 }
 
 @media screen and (max-width: 1000px) {
