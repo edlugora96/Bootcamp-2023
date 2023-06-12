@@ -80,9 +80,13 @@ main {
   margin-left: 3%;
 }
 
+.desc-Section img {
+  display: none;
+}
+
 @keyframes fontTransitionH2 {
   from {
-    font: 36px "Aurebesh";
+    font: 32px "Aurebesh";
     line-height: 1;
   }
   50% {
@@ -97,7 +101,7 @@ main {
 
 @keyframes fontTransitionP {
   from {
-    font: 26px "Aurebesh";
+    font: 22px "Aurebesh";
     line-height: 1;
   }
   50% {
@@ -333,16 +337,22 @@ footer section {
 }
 
 @media screen and (max-width: 1000px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
   main {
-    flex-direction: column-reverse;
+    height: auto;
+    flex-direction: row;
     align-items: center;
   }
   .desc-Section {
     width: 600px;
   }
 
-  .img-Section {
-    width: 400px;
+  .img-Section img {
+    width: 200px;
+    height: auto;
   }
 
   #linkButton {
@@ -350,49 +360,64 @@ footer section {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .desc-Section {
-    width: 300px;
+    display: block;
+    width: auto;
   }
 
-  .img-Section {
-    width: 300px;
+  .desc-Section img {
+    display: block;
+    float: right;
+    width: 250px;
+    height: 300px;
   }
 
-  .desc-Section h2 {
-    font-size: 25px;
-  }
-
-  .desc-Section p {
-    font-size: 20px;
-    margin: 3%;
-  }
-}
-
-@media screen and (max-width: 300px) {
   .img-Section {
     display: none;
   }
+}
 
-  .desc-Section {
-    width: auto;
-    border: none;
-    background: none;
-  }
-  .desc-Section h2 {
-    background-color: #84827584;
-  }
-  .desc-Section p {
-    background-color: #84827584;
+@media screen and (max-width: 560px) {
+  nav a {
+    font-size: 20px;
   }
 
   #linkButton {
     width: auto;
+    margin: 10px;
   }
 }
 
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 420px) {
+  .desc-Section img {
+    float: none;
+  }
+  .container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  header {
+    justify-content: center;
+  }
   header img {
+    display: none;
+  }
+  .desc-Section img {
     display: none;
   }
 }
